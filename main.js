@@ -17,7 +17,7 @@ document.querySelector('.next').addEventListener("click" , function(){
             active= active+1;
             old[active].classList.add('active');
         }
-    });
+    }); 
 //codice per il precedente
 document.querySelector('.prev').addEventListener("click" , function(){
     let old=document.querySelectorAll('.item');

@@ -5,7 +5,7 @@
 }
 .container{
     width: 1000px;
-    margin: auto;
+    margin: auto; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,6 +15,7 @@
     width: 700px;
     height: 380px;
     margin-top: 170px;
+    box-shadow: 10px 10px 5px #dedede;
 }
 .item{
     position: absolute;
