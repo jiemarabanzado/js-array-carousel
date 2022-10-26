@@ -5,17 +5,29 @@ for (let index = 0; index < images.length; index++) {
 }           
 document.querySelector('.item').classList.add('active')
 let active=0; 
-
+//next foto
 document.querySelector('.next').addEventListener("click" , function(){
      let old=document.querySelectorAll('.item');
      console.log(old);
-
      if(active==old.length-1){
         old[active].classList.remove('active');
         active=0;
         old[active].classList.add('active');}else{
             old[active].classList.remove('active');
             active= active+1;
+            old[active].classList.add('active');
+        }
+    });
+//codice per il precedente
+document.querySelector('.prev').addEventListener("click" , function(){
+    let old=document.querySelectorAll('.item');
+    console.log(old);
+    if(active==0){
+        old[active].classList.remove('active');
+        active=old.length-1;
+        old[active].classList.add('active');}else{
+            old[active].classList.remove('active');
+            active= active-1;
             old[active].classList.add('active');
         }
     });
