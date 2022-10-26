@@ -17,6 +17,7 @@ body{
     position: relative;
     width: 700px;
     height: 380px;
+    margin-top: 170px;
 }
 .item{
     position: relative;
@@ -35,9 +36,17 @@ body{
     color:white;
     margin: 5px;
     font-size: 1.3rem;
+    padding: 5px;
+    border-radius: 50%;
 }
 .next{
     bottom: 0;
+}
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.prev:hover{
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .active{
     display: block;
